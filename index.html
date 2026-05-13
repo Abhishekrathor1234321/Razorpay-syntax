@@ -33,6 +33,43 @@
         </div>
       </div>
       <br><br>
+
+      <!-- OFFER TIMER -->
+<div class="offer-timer-box">
+  <div class="timer-text">
+    Offer Ends In
+  </div>
+
+  <div id="countdown" class="countdown-timer">
+    30:00
+  </div>
+</div>
+
+<script>
+let time = 30 * 60; // 30 minutes
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  countdown.innerHTML = `${minutes}:${seconds}`;
+
+  time--;
+
+  if (time < 0) {
+    clearInterval(timer);
+
+    countdown.innerHTML = "OFFER EXPIRED";
+  }
+
+}, 1000);
+</script>
       <a href="https://rzp.io/rzp/0tSzJIrC" target="_blank" class="cd-enroll-btn">Enroll Now →</a>
       <div class="cd-preview-video">
   <p class="cd-preview-label">🎬 See What You'll Learn</p>

@@ -59,7 +59,7 @@
     .cd-price-label { display: block; font-size: 0.7rem; letter-spacing: 2px; color: #888; margin-bottom: 0.5rem; }
     .cd-price-row { display: flex; align-items: center; gap: 0.8rem; justify-content: center; }
     .cd-price { font-size: 2.5rem; font-weight: 800; color: white; }
-    .cd-price-og { font-size: 1.2rem; color: #555; text-decoration: line-through; }
+    .cd-price-og { font-size: 1.2rem; color: #ede6e6 !important; text-decoration: line-through; }
     .cd-discount-badge {
       background: #16a34a; color: white; font-size: 0.7rem;
       font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; letter-spacing: 0.5px;
@@ -293,4 +293,34 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+
+/* OFFER TIMER */
+
+.offer-timer-box{
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 24px;
+    border-radius: 14px;
+    background: rgba(1, 130, 1, 0.927);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.timer-text{
+    color: #cbd5e1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.countdown-timer{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: Arial, sans-serif;
 }
